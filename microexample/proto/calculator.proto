@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package micro.calc;
+
+service Calculator {
+    rpc Add (AddReq) returns (AddRes) {}
+    rpc Mul (MulReq) returns (MulRes) {}
+}
+
+message AddReq {
+    int64 Num1 = 1;
+    int64 Num2 = 2;
+}
+
+message AddRes {
+    int64 Res = 1;
+    string Err = 2;
+}
+
+message MulReq {
+    int64 Num1 = 1;
+    int64 Num2 = 2;
+}
+
+message MulRes {
+    int64 Res = 1;
+    string Err = 2;
+}

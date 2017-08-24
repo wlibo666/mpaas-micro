@@ -1,0 +1,14 @@
+{
+    "datacenter": "cn-bj",
+    "data_dir": "/letv/data/consul",
+    "log_level": "INFO",
+    "node_name": "10.185.30.76",
+    "advertise_addr":"10.185.30.76",
+    "client_addr":"10.185.30.76",
+    "server": true,
+    "ui":true,
+    "bootstrap": false,
+    "enable_syslog":true,
+    "retry_join":["10.135.28.154","10.112.34.55"],
+    "retry_interval":"60s"
+}
